@@ -1,5 +1,6 @@
 const products = [
   {
+    _id: '1',
     name: 'Daal',
     image: '/images/Daal.jpg',
     description: 'Daal',
@@ -10,6 +11,7 @@ const products = [
     numReviews: 12,
   },
   {
+    _id: '2',
     name: 'Rise',
     image: '/images/Rise.jpg',
     description: 'Rise',
@@ -20,6 +22,7 @@ const products = [
     numReviews: 8,
   },
   {
+    _id: '3',
     name: 'Turmeric',
     image: '/images/Turmeric.jpg',
     description: 'Turmeric',
@@ -30,6 +33,7 @@ const products = [
     numReviews: 12,
   },
   {
+    _id: '4',
     name: 'Wheat',
     image: '/images/Wheat.jpg',
     description: 'Wheat',
