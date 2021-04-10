@@ -1,3 +1,3 @@
 # KIRANA
 
-## MERN PROJECT ON E-COMMERCE
+## React-Django PROJECT.

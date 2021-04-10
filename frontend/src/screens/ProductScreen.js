@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {Button, Card, Col, Image, ListGroup, Row} from 'react-bootstrap'
 import products from '../products'
+import Rating from '../components/Rating'
 
 export default function ProductScreen({match}) {
   const product = products.find((p) => p._id === match.params.id)
@@ -20,9 +21,13 @@ export default function ProductScreen({match}) {
               <h3>{product.name}</h3>
             </ListGroup.Item>
             <ListGroup.Item>
-              Rating : {product.rating} ⭐by {`${product.numReviews} reviews`}
+              <Rating
+                value={product.rating}
+                text={`${product.numReviews} reviews`}
+                color={'#f8e825'}
+              />
             </ListGroup.Item>
-            <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+            <ListGroup.Item>Price: ₹{product.price}</ListGroup.Item>
             <ListGroup.Item>Description:{product.description}</ListGroup.Item>
           </ListGroup>
         </Col>
@@ -33,7 +38,7 @@ export default function ProductScreen({match}) {
                 <Row>
                   <Col>Price:</Col>
                   <Col>
-                    <strong>${product.price}</strong>
+                    <strong>₹{product.price}</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
