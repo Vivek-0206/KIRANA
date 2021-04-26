@@ -16,7 +16,7 @@ export default function ProductScreen({match}) {
 
   useEffect(() => {
     dispatch(listProductDetails(match.params.id))
-  }, [dispatch])
+  }, [dispatch, match.params.id])
   return (
     <>
       <Link className='btn btn-dark my-3' to='/'>
